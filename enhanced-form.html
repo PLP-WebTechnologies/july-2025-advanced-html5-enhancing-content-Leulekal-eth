@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Content & Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    header, section, footer {
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    table, th, td {
+      border: 1px solid #333;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    fieldset {
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+    legend {
+      font-weight: bold;
+      padding: 0 10px;
+    }
+    input, select, textarea {
+      display: block;
+      margin-bottom: 15px;
+      padding: 8px;
+      width: 100%;
+      max-width: 400px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Our Web Page</h1>
+    <p>This page demonstrates advanced HTML5 content and a fully validated form.</p>
+  </header>
+
+  <section>
+    <h2>Organized Content Using Lists</h2>
+    <h3>Ordered List (Steps to Get Started)</h3>
+    <ol>
+      <li>Register on the website</li>
+      <li>Fill out your profile</li>
+      <li>Submit the required documents</li>
+      <li>Start exploring content</li>
+    </ol>
+
+    <h3>Unordered List (Benefits of Our Platform)</h3>
+    <ul>
+      <li>Access to exclusive resources</li>
+      <li>User-friendly interface</li>
+      <li>Responsive customer support</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Information Display Using Tables</h2>
+    <table>
+      <caption>Course Schedule</caption>
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>Instructor</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML5 Basics</td>
+          <td>Leulekal Amare</td>
+          <td>Mon & Wed, 10:00 - 11:30 AM</td>
+        </tr>
+        <tr>
+          <td>CSS & Styling</td>
+          <td>Fraol Amare</td>
+          <td>Tue & Thu, 2:00 - 3:30 PM</td>
+        </tr>
+        <tr>
+          <td>JavaScript Fundamentals</td>
+          <td>Samuel Mengesha</td>
+          <td>Fri, 1:00 - 4:00 PM</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Embedded Media</h2>
+    <h3>Image</h3>
+    <img src="https://via.placeholder.com/400x200" alt="Sample Image" width="400">
+
+    <h3>Audio</h3>
+    <audio controls>
+      <source src="sample-audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <h3>Video</h3>
+    <video controls width="400">
+      <source src="sample-video.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+  </section>
+
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g., +251986445824" pattern="\+251[0-9]{9}" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Choose a username" required minlength="5">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter a password" required minlength="6">
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter your password" required minlength="6">
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself" maxlength="200"></textarea>
+
+        <label>
+          <input type="checkbox" name="terms" required>
+          I agree to the terms and conditions
+        </label>
+      </fieldset>
+
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Enhanced HTML5 Forms Assignment. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
